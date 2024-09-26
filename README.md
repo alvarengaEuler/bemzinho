@@ -20,17 +20,37 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+# Project Name
+Bemzinho/Lovinho
 
-To learn more about Next.js, take a look at the following resources:
+### Features
+- [ ] perguntas e respostas sobre o casal
+  - [ ] adicionar formulario para pergunta
+  - [ ] adicionar formulario para resposta
+  - [ ] % de conhecimento de cada um 
+  - [ ] salvar no banco  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [ ] Gostos dele/gostos dela
+  - [ ] musica
+  - [ ] cor favorita
+  - [ ] comida favorita
+  - [ ] bebida favorita
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [ ] Write a letter for yourself, (Why I love you)
+  - [ ] enviar para quem escreveu, enviar para parceiro
+  - [ ] selecionar tempo no futuro para envio
+  - [ ] mostrar icone na tela inicial (uma carta com relogio)
+  - [ ] no cadastro, guiar escritor com pontos importantes a serem relembrados
+  - [ ] mostrar a opcao de envio para o parceiro
 
-## Deploy on Vercel
+- [ ] Checklist
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [ ] Timer com o tempo que se conheceram
+- [ ] Timer regressivo para primeiro encontro
+  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+<!-- ### Completed Column ✓
+- [x] Completed task title   -->
