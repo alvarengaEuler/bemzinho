@@ -20,7 +20,7 @@ import { useTimerStore } from "@/app/store/useTimeStore";
 export function RelationshipTimerAndCountdowns() {
   const {
     relationshipStart,
-    relationshipDuration,
+
     timers,
     setRelationshipStart,
     updateRelationshipDuration,
