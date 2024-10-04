@@ -1,12 +1,12 @@
 "use client";
-import logo from "@/images/tailwind-logo.png";
+
 import Birds from "@/images/love-birds.png";
 import logotext from "@/images/logo-text.png";
 import Image from "next/image";
 import Link from "next/link";
-import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
+import { Dialog, Disclosure } from "@headlessui/react";
 
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { Menu, X, ChevronDown, MessageSquareHeart } from "lucide-react";
 
 const sectionDesigns = [
