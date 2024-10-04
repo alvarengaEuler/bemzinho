@@ -1,10 +1,5 @@
-import Image from "next/image";
-import mobilescreen from "@/images/mobilescreen.png";
-import { ChevronRight } from "lucide-react";
-import { Form } from "./form";
 import { MobileMockComponent } from "./mobile-mock";
-import { BackgroundSquares } from "./background-squares";
-import OptionButton from "./option-button";
+
 import { RelationshipTimerAndCountdowns } from "./frontComponentTest";
 
 const Hero = () => {

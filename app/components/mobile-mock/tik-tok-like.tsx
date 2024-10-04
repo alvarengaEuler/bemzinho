@@ -1,12 +1,5 @@
 import { useState } from "react";
-import {
-  Heart,
-  MessageCircle,
-  Share2,
-  Bookmark,
-  Music,
-  ChevronDown,
-} from "lucide-react";
+import { Heart, MessageCircle, Share2, Bookmark, Music } from "lucide-react";
 
 import Image from "next/image";
 
@@ -73,7 +66,7 @@ export function TiktokLikeComponent() {
             <div className="text-center p-4 ">
               <h3 className="font-semibold text-lg">Juntos</h3>
 
-              <div className="text-center">
+              {/* <div className="text-center">
                 <h1 className="text-md  font-pop text-white relative inline-block">
                   {relationshipDuration}
                   <span className="absolute top-0 left-0 font-pop text-pink-500/90 blur-sm transform translate-x-1 translate-y-1">
@@ -83,7 +76,7 @@ export function TiktokLikeComponent() {
                     {relationshipDuration}
                   </span>
                 </h1>
-              </div>
+              </div> */}
             </div>
           )}
           <p className="text-sm mt-1">

@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { addDays, differenceInSeconds, differenceInDays, differenceInMonths, differenceInYears, min } from 'date-fns'
+import { addDays, differenceInSeconds, differenceInDays, differenceInMonths, differenceInYears } from 'date-fns'
 
 interface TimerData {
   id: number
