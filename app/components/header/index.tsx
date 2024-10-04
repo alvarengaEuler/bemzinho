@@ -42,6 +42,7 @@ const pagesDesigns = [
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function classNames(...classes: any) {
     return classes.filter(Boolean).join(" ");
   }
