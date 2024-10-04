@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 // import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card";
-import { Camera, Heart, MessageCircle, Music, Send } from "lucide-react";
+import { Heart, MessageCircle, Music, Send } from "lucide-react";
 
 import ingrid1 from "@/images/people/ingrid2.jpeg";
 import Birds from "@/images/love-birds.png";
