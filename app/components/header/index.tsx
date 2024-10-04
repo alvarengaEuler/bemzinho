@@ -1,12 +1,13 @@
 "use client";
 import logo from "@/images/tailwind-logo.png";
+import Birds from "@/images/love-birds.png";
 import logotext from "@/images/logo-text.png";
 import Image from "next/image";
 import Link from "next/link";
 import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 
 import { Fragment, useState } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, MessageSquareHeart } from "lucide-react";
 
 const sectionDesigns = [
   { name: "Header Sections", href: "/headersections" },
@@ -46,94 +47,47 @@ const Header = () => {
   }
   return (
     <header className="bg-gray-950 text-gray-200 sticky top-0 z-40">
-      <nav className="mx-auto max-w-7xl flex items-center justify-between h-20 px-4 lg:px-8">
+      <nav className=" mx-auto max-w-7xl flex items-center justify-between h-20 px-4 lg:px-8">
         {/* Logo */}
-        <Link href={"/"}>
-          <Image
-            src={logo}
-            alt="logo"
-            className="h-16 w-auto scale-90 hover:scale-105 duration-200"
-          />
-        </Link>
-        {/* LinkList */}
-        <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Link href={"/"} className="headerList">
-            Home
-          </Link>
-          <Link href={"/features"} className="headerList">
-            Features
-          </Link>
-          <Link href={"/unknown"} className="headerList">
-            Not Found
-          </Link>
-          <Popover className="relative">
-            <Popover.Button className="headerList flex items-center gap-x-1">
-              Pages Designs <ChevronDown className="h-5 w-5 flex-none" />
-            </Popover.Button>
-
-            <Transition
-              as={Fragment}
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-56 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-900/5">
-                {pagesDesigns?.map((item) => (
-                  <Link
-                    key={item?.name}
-                    href={item?.href}
-                    className="block rounded-lg px-3 py-2 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-200"
-                  >
-                    {item?.name}
-                  </Link>
-                ))}
-              </Popover.Panel>
-            </Transition>
-          </Popover>
-          <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 hover:text-teal-200 duration-200 focus-visible:outline-none">
-              Tailwind Designs
-              <ChevronDown className="h-5 w-5 flex-none" aria-hidden="true" />
-            </Popover.Button>
-
-            <Transition
-              as={Fragment}
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-56 rounded-xl bg-white p-2 shadow-lg ring-1 ring-gray-900/5">
-                {sectionDesigns.map((item) => (
-                  <Link
-                    key={item?.name}
-                    href={item?.href}
-                    className="block rounded-lg px-3 py-2 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-200"
-                  >
-                    {item?.name}
-                  </Link>
-                ))}
-              </Popover.Panel>
-            </Transition>
-          </Popover>
-        </Popover.Group>
-        {/* Contactme button */}
-        <div className="hidden lg:flex">
-          <Link href={"/contactme"} className="headerList">
-            Contact Me <span aria-hidden="true">&rarr;</span>
-          </Link>
-        </div>
-        {/* small menu bar */}
         <div className="flex lg:hidden">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 hover:text-teal-200 duration-200"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-[#EB6395] hover:text-teal-200 duration-200"
+          >
+            <span className="sr-only">Open main menu</span>
+            {/* <span className=" font-bold px-2 text-xl ">BZ</span> */}
+            <MessageSquareHeart className="h-7 w-7" aria-hidden="true" />
+          </button>
+        </div>
+
+        {/* Contactme button */}
+        <div className="hidden lg:flex items-center justify-between max-w-md">
+          <Link href={"/"} className="headerList">
+            <span className="text-[#EB6395] headerList font-bold px-2 text-xl ">
+              Bem.zinho
+            </span>
+          </Link>
+        </div>
+        <div className="flex items-center justify-center flex-col">
+          <Image
+            src={Birds}
+            alt="LovelyBirds"
+            className="h-8 w-auto scale-90 hover:scale-105 duration-200"
+          />
+          <span className="text-[#EB6395] headerList font-bold px-2 text-xl font-pop uppercase ">
+            Bemzinho
+          </span>
+        </div>
+        {/* <Link href={"/contactme"} className="headerList">
+          Contact Us <span aria-hidden="true">&rarr;</span>
+        </Link> */}
+        {/* small menu bar */}
+        <div className="flex">
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(true)}
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-[#EB6395] hover:text-teal-200 duration-200"
           >
             <span className="sr-only">Open main menu</span>
 
